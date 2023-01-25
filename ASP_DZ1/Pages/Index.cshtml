@@ -1,0 +1,17 @@
+﻿@page
+<!DOCTYPE html>
+<html>
+<head>
+    <title>METANIT.COM</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>DZ1.Сегодняшний нормер дня: @DateTime.Now.DayOfYear</h2>
+    @{
+        Random rand = new Random();
+        char letter = (char)rand.Next( 'A', 'Z' + 1 );
+    }
+    <h2>DZ2.Random letter: @letter.ToString()</h2>
+    <h2>DZ3.</h2><a class="link-primary" asp-area="" asp-page="/Restaurant">Restaurant</a>
+</body>
+</html>
